@@ -1,0 +1,8 @@
+# MystiMark · 玄迹
+# Allow all well-behaved crawlers; point them at the sitemap.
+
+User-agent: *
+Allow: /
+
+# Tell major search engines where the sitemap is
+Sitemap: https://mystimark.brmeng.top/sitemap.xml

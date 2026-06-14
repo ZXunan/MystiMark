@@ -1,13 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>玄迹 · MystiMark</title>
+
+    <!-- Primary SEO -->
+    <title>玄迹 · MystiMark — 在浏览器里藏入与恢复图片里的消息</title>
     <meta
       name="description"
-      content="An in-browser studio for hiding and recovering messages inside images. Powered by an unmodified DWT-DCT-SVD Python engine running inside Pyodide — no server, no upload, no account."
+      content="MystiMark 玄迹：基于 DWT-DCT-SVD 算法的浏览器内图片消息隐藏与恢复工具。在浏览器里把文字或签名图藏进 PNG / JPEG，再原样取出来——全程零上传、零安装、零账号。开源、纯前端、Service Worker 离线可用。"
     />
+    <meta
+      name="keywords"
+      content="MystiMark, 玄迹, 图片隐写, 消息藏入图片, 图像水印, DWT-DCT-SVD, 频域水印, 盲水印, 浏览器隐写术, Pyodide, 在线图片消息, image steganography, hide message in image, blind watermark, image message recovery"
+    />
+    <meta name="author" content="ZXunan" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#7a2418" />
+    <link rel="canonical" href="https://mystimark.brmeng.top/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://mystimark.brmeng.top/" />
+    <link rel="alternate" hreflang="x-default" href="https://mystimark.brmeng.top/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WeChat, 微博) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MystiMark · 玄迹" />
+    <meta property="og:title" content="MystiMark · 玄迹 — 在浏览器里藏入与恢复图片里的消息" />
+    <meta
+      property="og:description"
+      content="基于 DWT-DCT-SVD 算法的开源浏览器内图片消息隐藏与恢复工具。零上传、零安装。开源。"
+    />
+    <meta property="og:url" content="https://mystimark.brmeng.top/" />
+    <meta property="og:image" content="https://mystimark.brmeng.top/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MystiMark · 玄迹 — Hide and recover messages inside images, right in your browser" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MystiMark · 玄迹 — In-browser image message studio" />
+    <meta
+      name="twitter:description"
+      content="Hide a text or signature image inside a PNG / JPEG, recover it later. Zero upload, zero install, zero account."
+    />
+    <meta name="twitter:image" content="https://mystimark.brmeng.top/og-cover.png" />
+    <meta name="twitter:image:alt" content="MystiMark · 玄迹 — In-browser image message studio" />
+
+    <!-- JSON-LD structured data: helps Google understand what this site is -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MystiMark · 玄迹",
+      "alternateName": "MystiMark",
+      "url": "https://mystimark.brmeng.top/",
+      "description": "基于 DWT-DCT-SVD 算法的开源浏览器内图片消息隐藏与恢复工具。零上传、零安装、零账号。",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any (modern browser with WebAssembly)",
+      "browserRequirements": "Requires WebAssembly, ES2020, OffscreenCanvas",
+      "inLanguage": ["zh-CN", "en"],
+      "isAccessibleForFree": true,
+      "license": "https://opensource.org/licenses/MIT",
+      "author": {
+        "@type": "Person",
+        "name": "ZXunan",
+        "url": "https://github.com/ZXunan"
+      },
+      "codeRepository": "https://github.com/ZXunan/MystiMark",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
